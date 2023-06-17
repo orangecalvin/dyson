@@ -73,7 +73,7 @@ li.na1_1 {
 li.na1_1 a {
   display: block;
   color: #F2F2F2;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   font-weight: bold;
 }
@@ -84,7 +84,7 @@ li.na1_1 a:hover {
 
 
 div.opgg {
-  margin-top: 91px;
+  margin-top: 70px;
 }
 
 div.hh {
@@ -384,11 +384,29 @@ p.foo2 {
 }
 
 /*      AddItem           */
-.add_bg {
+.main_body {
+  margin-top: 70px;
+}
+
+.ad2 {
   background:url('./img/bimg/제품등록2.jpg')no-repeat ;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  padding: 100px;
+  color: #ffffff;
 }
 
 
+.pt-4{
+  font-size: 1.8em;
+}
+
+.login4 {
+  padding: 100px;
+  width: 40%;
+  margin: 0 auto;
+}
 
 @keyframes App-logo-spin {
   from {
