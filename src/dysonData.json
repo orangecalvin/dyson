@@ -1,0 +1,21 @@
+[
+  {
+    "name" : "다이슨 V15 디텍트™ 컴플리트",
+    "ment" : "홀리데이 시즌 한정 가격 혜택",
+    "dyimg": "img/img2/c1.jpg",
+    "imgment" : "img/img2/c1_1.png"
+  },
+  {
+    "name" : "New 다이슨 에어랩™ 멀티 스타일러",
+    "ment" : "홀리데이 시즌 무료배송 해택",
+    "dyimg": "img/img2/c2.jpg",
+    "imgment" : "img/img2/c2_1.png"
+  },
+  {
+    "name" : "다이슨 쿨 포름알데히드 공기청정기",
+    "ment" : "홀리데이 시즌 특별 가격 혜택 및 추가 필터 증정",
+    "dyimg": "img/img2/c3.jpg",
+    "imgment" : "img/img2/c3_1.jpg"
+  }
+
+]

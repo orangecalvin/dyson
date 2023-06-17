@@ -13,6 +13,12 @@
   }
 }
 
+input {
+  display: none;
+}
+
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,6 +33,362 @@
 .App-link {
   color: #61dafb;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.hkh {
+  background: black;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  z-index: 999;
+}
+
+ul.gg1 {
+  width: 80%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+}
+
+li.na1_1 {
+  width: 12.5%;
+  float: left;
+}
+
+li.na1_1 a {
+  display: block;
+  color: #F2F2F2;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+li.na1_1 a:hover {
+  color: gray;
+}
+
+
+div.opgg {
+  margin-top: 91px;
+}
+
+div.hh {
+  background: url("img/baak1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: justify;
+  padding: 200px 0;
+}
+
+div.jj {
+  width: 75%;
+  margin: 0 auto;
+}
+
+h1.k1 {
+  color: white;
+}
+
+p.cpa1 {
+  color: white;
+}
+
+h3.k2 {
+  color: white;
+}
+
+p.cap2 {
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+p.cap2 a {
+  display: block;
+  line-height: 65px;
+  color: black;
+  background: rgba(0, 255, 0, 0.5);
+}
+
+p.cap2 a:hover {
+  color: black;
+  background: rgba(0, 255, 0, 1.0);
+}
+
+
+div.ma {
+  background: #F2F2F2;
+  width: 100%;
+  padding: 40px 0;
+}
+
+div.ma_1 {
+  width: 98%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+div.brp {
+  width: 32%;
+  margin-left: 0%;
+  float: right;
+}
+
+#t1:checked+#wrap>#con {
+  height: 255px;
+  border: 1px solid rgba(142, 141, 141, 0.5);
+}
+
+#t2:checked+#wrap>#con {
+  height: 255px;
+  border: 1px solid rgba(142, 141, 141, 0.5);
+}
+
+#t3:checked+#wrap>#con {
+  height: 255px;
+  border: 1px solid rgba(142, 141, 141, 0.5);
+}
+div.df:hover {
+  border: 1px solid #9dd53a;
+}
+
+div.df:hover img {
+  border: 1px solid #9dd53a;
+}
+
+#wrap {
+  width: 500px;
+  
+}
+
+#con {
+  width: 498px;
+  border: 1px solid #F2F2F2;
+  margin: 0 auto;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  height: 0;
+  background: #ffffff;
+  text-align:
+      justify;
+  line-height: 50px;
+
+}
+
+div.df {
+  border: 1px solid #F2F2F2;
+}
+
+div.df img {
+  border: 1px solid rgba(142, 141, 141, 0.5);
+}
+
+img.pk_1 {
+  width: 40%;
+  margin: 0 10px;
+}
+
+p.ka {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin: 10px;
+}
+
+p.ka2 {
+  margin: 0 10px;
+  font-weight: 600;
+  color: #9dd53a;
+  margin-bottom: 20px;
+}
+
+p.kabot {
+  background: #9dd53a;
+  width: 50%;
+  float: left;
+  text-align: center;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+p.kabot2 {
+  background: #424242;
+  width: 50%;
+  float: left;
+  text-align:
+      center;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+p.kabot a {
+  cursor: pointer;
+  color: black;
+}
+
+p.kabot2 a {
+  cursor: pointer;
+  color: white;
+}
+
+p.kabot:hover {
+  cursor: pointer;
+  background: gray;
+}
+
+p.kabot2:hover {
+  cursor: pointer;
+  background: rgba(0, 51, 0, 0.7);
+}
+
+
+div.pp {
+  background :url("./img/제품등록.png") no-repeat #F2F2F2;
+  width: 100%;
+  padding: 60px 0;
+  background-position: right center;
+  border-top: 3px solid #282c34;
+}
+
+div.pp_1 {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-left: 1%;
+  text-align: justify;
+  z-index: 999;
+}
+
+p.pp_p1 {
+  display: flex;
+}
+
+
+p.pp_p1 a {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  background: white;
+  width: 30%;
+  border: 1px solid gray;
+  text-align: justify;
+  padding: 10px;
+  color: #282c34;
+
+}
+
+p.pp_p1 a:hover {
+  box-shadow: 5px 5px 5px 5px gray;
+  color: #9dd53a;
+}
+
+/*------------------풋터--------------*/
+
+footer {
+  background: #424242;
+}
+
+p.infor {
+  width: 80%;
+  color: #9dd53a;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: left;
+}
+
+hr.jp {
+  width: 80%;
+  margin: 0 auto;
+  background: #F2F2F2;
+  margin-top: 5px;
+}
+
+div.foot_1 {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+ul.vi {
+  text-align: justify;
+}
+
+ul.fori {
+  float: left;
+  margin-right: 5%;
+  width: 30%;
+}
+
+ul.fori2 {
+  float: left;
+  margin-right: 5%;
+  width: 30%;
+}
+
+ul.fori3 {
+  float: left;
+  margin-right: 0%;
+  width: 30%;
+}
+
+hr.jp2 {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px dashed #F2F2F2;
+}
+
+
+li.fori_1 a {
+  color: #9dd53a;
+}
+
+div.foot {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+div.foo {
+  float: left;
+  padding: 20px 0;
+  font-size: 0.6em;
+  color: #F2F2F2;
+  text-align: justify;
+}
+
+p.foo2 {
+  float: right;
+  padding: 20px 0;
+  text-align: right;
+}
+
+/*      AddItem           */
+.add_bg {
+  background:url('./img/bimg/제품등록2.jpg')no-repeat ;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
