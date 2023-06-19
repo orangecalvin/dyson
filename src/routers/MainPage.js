@@ -2,6 +2,7 @@ import { useState } from "react";
 import MainHome from "./MainHome";
 import ItemMent from "./ItemMent";
 
+
 function MainPage() {
   const [subMenu, setSubMenu] = useState([
     { text: '무료배송', link: '#' },
@@ -14,6 +15,7 @@ function MainPage() {
     <ItemMent />
     <div className="pp">
       <div className="pp_1">
+
         <p className="pp_p1">
           {
             subMenu.map((a, i) => (
@@ -23,8 +25,9 @@ function MainPage() {
               </a>
             ))}
         </p>
+
       </div>
     </div></>
   )
-} 
+}
 export default MainPage;
