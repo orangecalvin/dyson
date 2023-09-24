@@ -34,12 +34,11 @@ function ItemMent() {
 
 function Card({ props, id }) {
   return (<>
-
     <div className="brp">
       <input id={id} type="checkbox" />
       <div id="wrap">
 
-        <label className="right" htmlFor={id} onClick="">
+        <label className="right" htmlFor={id}>
           <div className="df">
 
             <img src={require(`../${props.dyimg}`)} alt="다이슨" className="pk" width="100%" />

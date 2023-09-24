@@ -1,11 +1,29 @@
 import { useEffect, useState } from "react";
 import ServiceAs from "../ServiceAs.json";
-import { Link } from "react-router-dom";
+
+
+
+function Box({ center, i }) {
+  return (
+    <div className="soulebox">
+      <div>
+        <p style={{ fontWeight: 800 }}>{center.센터}</p>
+        <hr />
+        <p style={{ fontSize: '0.8em' }}>{center.주소}</p>
+        <p style={{ fontSize: '0.8em' }}>{center.기타}</p>
+        <a href={center.지도} target="_blank" rel="noopener noreferrer">
+          지도 보기
+        </a>
+      </div>
+      <hr />
+    </div>
+  );
+}
 
 function ServiceCenter() {
-  const [asCeter, setAsCenter] = useState({}); // 초기값을 빈 객체로 설정
-  const [findCenter, setfindCenter] = useState(["서울", "부산", "경기도"]);
-  const [aspoint, setAsPoint] = useState([
+  const [asCeter, setAsCenter] = useState(ServiceAs); // 초기값을 빈 객체로 설정
+  const [findCenter] = useState(["서울", "부산", "경기도"]);
+  const [aspoint] = useState([
     {
       h4ment: "다이슨 제품 전문가의 컨설팅 서비스",
       pment: "다이슨 제품 전문가들을 통한 정확한 진단 및 수리를 제공해 드립니다"
@@ -15,13 +33,6 @@ function ServiceCenter() {
       pment: "다양한 다이슨 제품을 편안하게 체험해보실 수 있습니다"
     }
   ]);
-  useEffect(() => {
-    setAsCenter(ServiceAs);
-  }, []);
-
-  if (Object.keys(asCeter).length === 0) {
-    return <div>Loading...</div>;
-  }
 
   return (<div className="ServiceCenter">
     <div className="scimg">
@@ -57,48 +68,31 @@ function ServiceCenter() {
         ))
       }
     </div>
-    <div className="enimg"></div>
+
     <div className="boxs">
       <div id="서울" className="airbox"></div>
-      <h2>서울특별시</h2>
+      <h2>{findCenter[0]}</h2>
       
       {
-        asCeter["서울"].map((center, i) => (<Box center={center} />))
+        asCeter["서울"]?.map((center, i) => (<Box center={center} />))
       }
     </div>   <hr />
     <div className="boxs">
     <div id="경기도" className="airbox"></div>
       <h2>경기도</h2>
       {
-        asCeter["경기도"].map((center, i) => (<Box center={center} />))
+        asCeter["경기도"]?.map((center, i) => (<Box center={center} />))
       }
     </div>   <hr />
     <div className="boxs">
     <div id="부산" className="airbox"></div>
       <h2 >부산</h2>
       {
-        asCeter["부산"].map((center, i) => (<Box center={center} />))
+        asCeter["부산"]?.map((center, i) => (<Box center={center} />))
       }
     </div>
   </div>
   );
 
-
-  function Box({ center, i }) {
-    return (
-      <div className="soulebox">
-        <div>
-          <p style={{ fontWeight: '800' }}>{center.센터}</p>
-          <hr />
-          <p style={{ fontSize: '0.8em' }}>{center.주소}</p>
-          <p style={{ fontSize: '0.8em' }}>{center.기타}</p>
-          <a href={center.지도} target="_blank" rel="noopener noreferrer">
-            지도 보기
-          </a>
-        </div>
-        <hr />
-      </div>
-    );
-  }
 }
 export default ServiceCenter;

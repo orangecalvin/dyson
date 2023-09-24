@@ -134,6 +134,7 @@ p.cap2 a:hover {
 div.ma {
   background: #F2F2F2;
   padding: 40px 0;
+  
 }
 
 
@@ -186,6 +187,7 @@ div.df {
 div.df img {
   border: 1px solid rgba(142, 141, 141, 0.5);
 }
+
 
 img.pk_1 {
   width: 40%;
@@ -250,7 +252,7 @@ div.pp {
   width: 100%;
   padding: 60px 0;
   background-position: right center;
-  border-top: 3px solid #282c34;
+  border-top: 3px solid #282c3480;
 }
 
 div.pp_1 {
@@ -479,17 +481,11 @@ overflow: hidden;
   background: #d5cfcfd1;
 }
 
-.enimg{
-  background :url("./img/하단 이미지/Demo_Store1.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-}
+
 
 .asimg{
   width: 60%;
-  margin: 0 auto;
- 
+  margin: 0 auto; 
 }
 
 .aspoint{
@@ -510,11 +506,12 @@ overflow: hidden;
   height: 30px;
   margin-bottom: 60px;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.mh2{
+  background: #F2F2F2;
+  border-top: 3px solid #282c3480;
+}
+.returnitem{
+  width: 60%;
+  margin: 0 auto;
 }
